@@ -17,15 +17,22 @@ class App extends React.Component {
     changeSearch = (e) =>{
     this.setState({search:e.target.value})
   }
+
   
   render() { 
-    const {heading,Search}= this.state;
+   
+    
+    
+    const {heading}= this.state;
     return (  
 
       <div className="App">
         <h1>{heading}</h1>
          
          <WeatherDisplay/>
+
+         
+         
         
       </div>
 

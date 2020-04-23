@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Project description: 
+weather application that consumes max-box-geocoding and dark sky api.
+Shows the weather status in the chosen city hour by hour and the coordinates of that city.
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

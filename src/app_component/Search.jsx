@@ -5,13 +5,14 @@ const Search =(props)=>{
     return(
         <div className="Search">
             <input 
+            className="px-5 text-left"
             type="text"  
-            placeholder="Ciudad" 
+            placeholder="Ingresa tu Ciudad" 
             onChange={({target:{value}}) => props.changeSearch(value)}
             value={props.cityValue}
             
             />
-            <button onClick={props.weather}> ¿Debo de llevar mi paraguas? </button>
+            <button onClick={props.weather} className="mx-3"> ¿Debo de llevar mi paraguas? </button>
        
         </div>
     );
