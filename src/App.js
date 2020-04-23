@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
+import WeatherDisplay from './app_component/WeatherDisplay.jsx';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { 
+     heading:'DarkSkyAPI and mapbox API',
+     Search:''
+     }
+    }
+
+    changeSearch = (e) =>{
+    this.setState({search:e.target.value})
+  }
+  
+  render() { 
+    const {heading,Search}= this.state;
+    return (  
+
+      <div className="App">
+        <h1>{heading}</h1>
+         
+         <WeatherDisplay/>
+        
+      </div>
+
+    );
+  }
 }
-
+ 
 export default App;
