@@ -3,6 +3,7 @@ import Weather from './Weather.jsx';
 import Search from './Search.jsx'
 import Map from './Map.jsx'
 
+
 class WeatherDisplay extends Component {
     constructor(props) {
         super(props);
@@ -42,7 +43,7 @@ class WeatherDisplay extends Component {
 
     cardweather = () => {
         const nextFourForecast = this.state.forecastcurrentInfo.slice(0, 4)
-        const cardWeather = nextFourForecast.map(forecast => {
+        const cardWeather = nextFourForecast.map((forecast,index) => {
             return (
                 <div className="col-sm">
                     <Weather 
@@ -63,6 +64,10 @@ class WeatherDisplay extends Component {
 
     }
 
+    
+
+    
+
 
     render() {
         return (
@@ -72,10 +77,7 @@ class WeatherDisplay extends Component {
                     cityValue={this.state.city}
                     weather={this.onClick}
                 />
-                <div className="row">
-
-
-                </div>
+              
                 <div className="row">
                     {this.cardweather()}
 

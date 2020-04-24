@@ -12,7 +12,7 @@ const Search =(props)=>{
             value={props.cityValue}
             
             />
-            <button onClick={props.weather} className="mx-3"> ¿Debo de llevar mi paraguas? </button>
+            <button className="mx-3 boton" onClick={props.weather} > ¿Debo de llevar mi paraguas? </button>
        
         </div>
     );

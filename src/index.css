@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body{
+  background-image: url(https://sooluciona.com/wp-content/uploads/2019/07/Diferencias-entre-meteorologi%CC%81a-y-climatologi%CC%81a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

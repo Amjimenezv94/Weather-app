@@ -8,7 +8,7 @@ const Weather = (props) => {
     return (
 
 
-        <div className="container">
+        <div >
 
             <div className="cards container">
                 <h1 className="">{props.cityName}</h1>

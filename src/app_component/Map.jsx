@@ -10,8 +10,8 @@ class Map extends Component {
         super(props);
         this.state = {
 
-            lat: 42.3601,
-            lng: -71.0589,
+            lat: 6.241031,
+            lng: -75.577698,
             width: '50vw',
             height: '50vh',
             zoom: 15,
