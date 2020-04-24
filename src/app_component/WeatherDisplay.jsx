@@ -11,9 +11,10 @@ class WeatherDisplay extends Component {
             forecastcurrentInfo: [],
             cityName:'',
             forecastdailyInfo: [],
-
-
-
+            
+           
+            
+           
         }
     }
 
@@ -48,7 +49,10 @@ class WeatherDisplay extends Component {
                     cityName= {this.state.cityName}
                     icon={forecast.icon}
                     time={forecast.time}
-                    
+                    temperature={forecast.temperature}
+                    temperatureMax={this.state.forecastdailyInfo[0]. temperatureMax}
+                    temperatureMin={this.state.forecastdailyInfo[0]. temperatureMin}
+                    summary={forecast.summary}
                     />
                 </div>
     
@@ -77,7 +81,12 @@ class WeatherDisplay extends Component {
 
                 </div>
 
-                <Map />
+                <Map 
+                coordinates={this.state}
+                lat={this.lat}
+                lng={this.lng}
+
+                 />
             </div>
         );
     }

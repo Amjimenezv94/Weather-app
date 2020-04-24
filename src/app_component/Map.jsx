@@ -4,16 +4,16 @@ import useSrw from 'swr';
 //import ReactMapGL, {Marker, flyToInterpolator} from 'react-map-gl';
 import mapboxgl from 'mapbox-gl';
 
-mapboxgl.accessToken="pk.eyJ1IjoiYW1qaW1lbmV6diIsImEiOiJjazljOXBpZTMwMjFvM2hwM2l5ZmltZHk4In0.gWJxHBxwcnX-xEou6Oew7A";
+mapboxgl.accessToken="pk.eyJ1IjoiYW1qaW1lbmV6diIsImEiOiJjazljOXBpZTMwMjFvM2hwM2l5ZmltZHk4In0.gWJxHBxwcnX-xEou6Oew7A"
 class Map extends Component {
     constructor(props) {
         super(props);
         this.state = {
 
-            lat: 6.241031,
-            lng: -75.577698,
-            width: '100vw',
-            height: '100vh',
+            lat: 42.3601,
+            lng: -71.0589,
+            width: '50vw',
+            height: '50vh',
             zoom: 15,
         }
 
